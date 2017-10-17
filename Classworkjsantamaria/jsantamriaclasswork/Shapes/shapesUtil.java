@@ -1,4 +1,5 @@
 package Shapes;
+import java.util.Random;
 
 public class shapesUtil {
 	public static double sumPerim(Shapes[] shapeArr) {
@@ -15,5 +16,18 @@ public class shapesUtil {
 			tempsum += shapeArr[i].calculateArea();
 		}
 		return tempsum;
+	}
+	
+	public static Shapes getRandomShape() {
+		Random r = new Random();
+		int x =  r.nextInt(100);
+		switch(x) {
+		case 0 :
+			return Circle(r.nextInt(100) + 1);
+		case 1:
+			return Rectangle(r.nextInt(100) + 1);
+		default:
+			return Square(10);
+		} 
 	}
 }
