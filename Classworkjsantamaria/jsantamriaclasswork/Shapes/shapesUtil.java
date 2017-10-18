@@ -3,7 +3,7 @@ import java.util.Random;
 
 
 public class shapesUtil {
-	public static double sumPerim(Shapes[] shapeArr) {
+	public static double sumPerimeter(Shapes[] shapeArr) {
 		double tempsum =0;
 		for(int i = 0; i < shapeArr.length; i++) {
 			tempsum += shapeArr[i].calculatePerimeter();
@@ -11,7 +11,7 @@ public class shapesUtil {
 		return tempsum;
 	}
 	
-	public static double totalArea(Shapes[] shapeArr) {
+	public static double sumArea(Shapes[] shapeArr) {
 		double tempsum =0;
 		for(int i = 0; i < shapeArr.length; i++) {
 			tempsum += shapeArr[i].calculateArea();
@@ -19,7 +19,7 @@ public class shapesUtil {
 		return tempsum;
 	}
 	
-	public static Shapes getRandomShape() {
+	public static Shapes randomShape() {
 		Random r = new Random();
 		int x =  r.nextInt(100);
 		switch(x) {
