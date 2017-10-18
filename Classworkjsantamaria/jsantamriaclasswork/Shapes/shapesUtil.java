@@ -24,11 +24,11 @@ public class shapesUtil {
 		int x =  r.nextInt(100);
 		switch(x) {
 		case 0 :
-			return Circle(((double) r.nextInt(100) + 1));
+			return new Circle(((double) r.nextInt(100) + 1));
 		case 1:
-			return Rectangle( ((double) r.nextInt(100) + 1),(double) r.nextInt(100) + 1);
+			return new Rectangle(((double) r.nextInt(100) + 1),(double) r.nextInt(100) + 1);
 		default:
-			return Square(10);
+			return new Square(10.0);
 		} 
 	}
 }
