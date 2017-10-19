@@ -10,12 +10,12 @@ public class Rectangle implements Shapes {
 	}
 	   @Override
 	    public double calculateArea() {
-		   return ((this.width * 2) * (this.length * 2));
+		   return ((width * 2) * (length * 2));
 	    }
 
 	    @Override
 	    public double calculatePerimeter() {
-	       return ((this.width * 2) + (this.length * 2));
+	       return ((width * 2) + (length * 2));
 	    }
 
 	    @Override

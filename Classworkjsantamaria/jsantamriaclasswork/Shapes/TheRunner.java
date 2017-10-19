@@ -1,12 +1,5 @@
 package Shapes;
 
-import Shapes.Circle;
-import Shapes.Rectangle;
-import Shapes.Shapes;
-import Shapes.shapesUtil;
-import Shapes.Square;
-import Shapes.String;
-
 public class TheRunner {
 	public static void main (String[] args)
     {
@@ -45,4 +38,5 @@ public class TheRunner {
 
         System.out.println("\nTotal Area: " + shapesUtil.sumArea(shapeArr));
         System.out.println("Total Perimeter: " + shapesUtil.sumPerimeter(shapeArr));
+}
 }

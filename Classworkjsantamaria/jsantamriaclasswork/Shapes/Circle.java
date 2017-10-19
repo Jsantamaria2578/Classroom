@@ -8,10 +8,10 @@ public class Circle implements Shapes{
 	}
 	
 	public double calculateArea() {
-		return this.radius * this.radius * pi;
+		return radius * radius * pi;
 	}
 	
 	public double calculatePerimeter() {
-		return 2 * this.radius * pi;
+		return 2 * radius * pi;
 	}
 }
